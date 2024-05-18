@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input e seus tipos</title>
+</head>
+<body>
+    <label>Text:</label><input type="text" /><br>
+    <!-- input mais conhecido aceita all-->
+    <label>Number:</label><input type="number"><br>
+    <!--input só aceita numeros podendo optar por maximo e minimo com type="number" min="" max"" ou até mesmo stap"" para colocar de quanto em quanto o numero poderia pular-->
+    <label>Range:</label><input type="range" /><br>
+    <!--também podendo ser usado com o min, max e stap, ele cria um campo scroll, para arrastar-->
+    <label>Color:</label><input type="color" /><br>
+    <!--cria uma caixa de cores-->
+    <label>Email:</label><input type="email" /><br>
+    <!--cria uma campo para envio de email, com padrão do navegador que não permite o envio sem ]@-->
+    <label>Url:</label><input type="url" /><br>
+    <!--da mesma forma com o email, o input url reconhece que o que vc esta digitando não é uma url e não permite o envio do mesmo-->
+    <label>Data:</label><input type="date" /><br>
+    <!---->
+    <label>Week:</label><input type="week" /><br>
+    <!--pouco usado, ele te da uma opção de selecionar a semana ATENÇÃO: NÃO FUNCIONA NO FIRE, SÓ NO CHROME E EDGE-->
+    <label>Month:</label><input type="month" /><br>
+    <!--mesma coisa, permite selecionar meses e não funciona no FIRE-->
+    <label>Checkbox:</label><input type="checkbox" /></label><input type="checkbox" /><br>
+    <!--caixa para selecionar com check, USADO MAIS PARA BOOLEAN v/f-->
+    <label>Radio:</label><input type="radio" name="ok" /></label><input type="radio" name="ok" /><br>
+    <!--enquanto checkbox permite selecionar todas a checkbox que colocadas lado a lado, radio permite que seja selecionado um ou outro-->
+    <label>Button</label><input type="button" value="Enviar"><br>
+    <!--caiu em desuso, pois semanticamente o correto seria utilizar a tag <button><button/> direto-->
+    <label>Hidden:</label><input type="hidden" /><br>
+    <label>File:</label><input type="File" multiple /><br>
+    <!--file é para criar uma caixa de enviar aquivos, e o multiple serve para dar ao usuario  a opção de selecionar varios arquivos-->
+    <label>Search:</label><input type="search">
+    <!--para buscas-->
+</body>
+</html>
