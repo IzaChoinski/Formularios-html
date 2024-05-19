@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio Button</title>
+</head>
+<body>
+    <form method="get">
+        <h1>Você selecionou pizza de calabresa:</h1>
+        <h2>Quais são os opcionais?</h2><br>
+        <input type="checkbox" disabled name="opcional[]" value="queijo"> + queijo <br>
+        <!--o DISABLE desabilita o campo, deixando indisponivel
+                as cheves [] em opcional é o que faz com que o html 
+                e o javascript entendam que é uma lista, se não colocados
+                ele vai criar apenas uma variavel e o ultimo selecionado
+                ira assumir a posição, assim não realizando um acumilo ou lista de opcionais -->
+        <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+
+        <h2>Borda Recheada?</h2>
+        <input type="radio" name="borda" value="sim">Sim <br>
+        <input type="radio" name="borda" value="nao">Não <br>
+        <!--em radio a variavel nome recebe borda, quando se tem o mesmo
+            nome de variavel para varios casos de radio, ele só aceita um ou outro,
+            portanto, se você tiver nomes de variaveis distintos ele vai deixar que
+            seja selecionado qualquer um-->
+
+        <h2>Bebida</h2>
+        <input type="radio" name="bebida" value="suco">Suco <br>
+        <input type="radio" name="bebida" value="refrigerante">Refrigerante <br>
+        <input type="radio" name="bebida" value="agua">Agua <br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum <br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+</body>
+</html>
