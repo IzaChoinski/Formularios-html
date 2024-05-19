@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    <form method="get">
+        <label>Nome:</label><input type="text" name="name"><br>
+        <label>Idade:</label><input type="number" name="age"><br>
+        <label>Senha:</label><input type="password" name="password"><br>
+        <br>
+        <button type="button" onclick="alert('NÃO SERVE PRA NADA')">Button</button>: não tem função <br>
+        <!--tipo button não faz nada, é apenas um botão clicavel sem função
+            neste caso coloquei um onclick com um alert pra ficar claro que nada faz-->
+        <button type="reset">Reset</button>: limpa os campos <br>
+        <!--limpa os campos-->
+        <button type="submit">Envia</button>: envia o formilario <br>
+        <!--envia o formulario, partindo do method get ou post-->
+    
+    </form>
+</body>
+</html>
